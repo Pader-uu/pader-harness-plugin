@@ -1,5 +1,7 @@
 # Pader Library Tool for DeepSeek Harness
 
+Pader is an iOS app for discovering, collecting, and organizing research papers through a personalized feed. Learn more at [www.pader.com](https://www.pader.com).
+
 This installable DeepSeek Harness bundle adds one read-only tool:
 
 ```
@@ -49,4 +51,3 @@ In the Web UI, ask the model a request such as:
 ```
 Use my Pader library to list the papers in my saved folders.
 ```
-
