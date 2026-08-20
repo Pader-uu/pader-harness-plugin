@@ -50,23 +50,3 @@ pnpm dsh plugin --profile web add /absolute/path/to/pader-harness-plugin
 pnpm dsh web
 ```
 
-## Configuration
-
-The bundle defaults to `https://www.pader.top` and a 15-second timeout. For local backend testing, set the base URL before starting Harness:
-
-```bash
-export PADER_API_BASE_URL='http://127.0.0.1:8002'
-```
-
-`baseUrl` and `timeoutMs` can also be overridden in a later Cordis configuration layer. The plugin accepts `config.apiKey`, but environment variable `PADER_API_KEY` is preferred so the secret is not persisted in the profile.
-
-## Test
-
-The transport and output-shape tests have no DeepSeek dependencies:
-
-```bash
-node --test tests/pader-client.test.js
-node --check index.js
-```
-
-These tests use a mocked HTTP response. To make a live request, first deploy the Pader backend version containing `GET /api/v1/library` and create a personal API key in the Pader app.

@@ -1,0 +1,22 @@
+{
+  "name": "pader-library-tool",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness tool for reading a Pader user's saved paper library.",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "pader-client.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dependencies": {
+    "@deepseek-ai/dsh-tools": "0.1.0-rc.6",
+    "@deepseek-ai/schemastery": "3.18.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+- insert:
+    - id: pader-library-tool
+      name: pader-library-tool
+      config:
+        baseUrl: https://www.pader.top
+        timeoutMs: 15000
